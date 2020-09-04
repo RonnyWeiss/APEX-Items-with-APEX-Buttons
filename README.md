@@ -1,4 +1,6 @@
  # APEX Items with APEX Button
+ 
+  ![](https://img.shields.io/badge/ORACLE-APEX-success.svg) ![](https://img.shields.io/badge/Plug--in_Type-Dynamic_Action-orange.svg) ![](https://img.shields.io/badge/Avaiable%20for%20APEX-5.1.3%20or%20above-blue)
 
 ![Screenshot](https://github.com/RonnyWeiss/APEX-Items-with-APEX-Buttons/blob/master/screenshot.png?raw=true)
 
@@ -10,8 +12,6 @@ For working Demo just click on:
 
 https://apex.oracle.com/pls/apex/f?p=103428
 
-Login is: user-demo / 123456@
-
-If you like my stuff, donate me a coffee
+If you like my stuff, would be nice if you donate me a coffee
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/RonnyW1)
