@@ -6,7 +6,7 @@ whenever sqlerror exit sql.sqlcode rollback
 -- ORACLE Application Express (APEX) export file
 --
 -- You should run the script connected to SQL*Plus as the Oracle user
--- APEX_200100 or as the owner (parsing schema) of the application.
+-- APEX_210200 or as the owner (parsing schema) of the application.
 --
 -- NOTE: Calls to apex_application_install override the defaults below.
 --
@@ -43,13 +43,12 @@ wwv_flow_api.create_plugin(
 ') RETURN APEX_PLUGIN.T_DYNAMIC_ACTION_RENDER_RESULT AS',
 '    VR_RESULT         APEX_PLUGIN.T_DYNAMIC_ACTION_RENDER_RESULT;',
 'BEGIN',
-'',
-'    VR_RESULT.JAVASCRIPT_FUNCTION   := ''',
-'    function () { ',
-'        var btn = "#" + $(this)[0].action.affectedButtonId;',
+'    VR_RESULT.JAVASCRIPT_FUNCTION   := ''function () { ',
+'        var btn = $("#" + $(this)[0].action.affectedButtonId);',
 '        var divCon = $("#'' || APEX_ESCAPE.HTML_ATTRIBUTE( P_DYNAMIC_ACTION.ATTRIBUTE_01 ) || ''").closest(".t-Form-itemWrapper");',
-'        $(btn).appendTo(divCon);',
-'        $(btn).addClass("a-Button a-Button--calendar"); ',
+'        btn.appendTo(divCon);',
+'        btn.addClass("a-Button a-Button--calendar");',
+'        btn.siblings().css("width", "auto");',
 '    }'';',
 '',
 '    RETURN VR_RESULT;',
@@ -61,9 +60,9 @@ wwv_flow_api.create_plugin(
 ,p_subscribe_plugin_settings=>true
 ,p_help_text=>'This plug-in is used to move one or more APEX Button behind a Page Item. This is like the Plug-in "Textfield with Buttons" but you can use APEX Buttons, so you have full APEX Button and Theme Support. E.g. you got an Dialog Close Event when Close Dia'
 ||'log on Button Click.'
-,p_version_identifier=>'1.2'
+,p_version_identifier=>'1.2.1'
 ,p_about_url=>'https://github.com/RonnyWeiss/APEX-Items-with-APEX-Buttons'
-,p_files_version=>8
+,p_files_version=>9
 );
 wwv_flow_api.create_plugin_attribute(
  p_id=>wwv_flow_api.id(25558931565402669187)
@@ -81,7 +80,7 @@ end;
 /
 begin
 wwv_flow_api.g_varchar2_table := wwv_flow_api.empty_varchar2_table;
-wwv_flow_api.g_varchar2_table(1) := '4D4954204C6963656E73650A0A436F7079726967687420286329203230323020526F6E6E792057656973730A0A5065726D697373696F6E20697320686572656279206772616E7465642C2066726565206F66206368617267652C20746F20616E79207065';
+wwv_flow_api.g_varchar2_table(1) := '4D4954204C6963656E73650A0A436F7079726967687420286329203230323220526F6E6E792057656973730A0A5065726D697373696F6E20697320686572656279206772616E7465642C2066726565206F66206368617267652C20746F20616E79207065';
 wwv_flow_api.g_varchar2_table(2) := '72736F6E206F627461696E696E67206120636F70790A6F66207468697320736F66747761726520616E64206173736F63696174656420646F63756D656E746174696F6E2066696C657320287468652022536F66747761726522292C20746F206465616C0A';
 wwv_flow_api.g_varchar2_table(3) := '696E2074686520536F66747761726520776974686F7574207265737472696374696F6E2C20696E636C7564696E6720776974686F7574206C696D69746174696F6E20746865207269676874730A746F207573652C20636F70792C206D6F646966792C206D';
 wwv_flow_api.g_varchar2_table(4) := '657267652C207075626C6973682C20646973747269627574652C207375626C6963656E73652C20616E642F6F722073656C6C0A636F70696573206F662074686520536F6674776172652C20616E6420746F207065726D697420706572736F6E7320746F20';
