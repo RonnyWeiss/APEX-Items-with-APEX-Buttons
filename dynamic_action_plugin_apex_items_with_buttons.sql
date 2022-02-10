@@ -48,6 +48,7 @@ wwv_flow_api.create_plugin(
 '        var divCon = $("#'' || APEX_ESCAPE.HTML_ATTRIBUTE( P_DYNAMIC_ACTION.ATTRIBUTE_01 ) || ''").closest(".t-Form-itemWrapper");',
 '        btn.appendTo(divCon);',
 '        btn.addClass("a-Button a-Button--calendar");',
+'        btn.css("margin-inline-start", "0px");',
 '        btn.siblings().css("width", "auto");',
 '    }'';',
 '',
@@ -60,7 +61,7 @@ wwv_flow_api.create_plugin(
 ,p_subscribe_plugin_settings=>true
 ,p_help_text=>'This plug-in is used to move one or more APEX Button behind a Page Item. This is like the Plug-in "Textfield with Buttons" but you can use APEX Buttons, so you have full APEX Button and Theme Support. E.g. you got an Dialog Close Event when Close Dia'
 ||'log on Button Click.'
-,p_version_identifier=>'1.2.1'
+,p_version_identifier=>'1.2.2'
 ,p_about_url=>'https://github.com/RonnyWeiss/APEX-Items-with-APEX-Buttons'
 ,p_files_version=>9
 );
