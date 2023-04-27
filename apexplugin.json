@@ -1,7 +1,7 @@
 {
     "name": "APEX Items with APEX Buttons",
     "version": "1.2.4",
-    "description": "This plug-in is used to move one or more APEX Button behind a Page Item. This is like the Plug-in \"Textfield with Buttons\" but you can use APEX Buttons, so you have full APEX Button and Theme Support. E.g. you got an Dialog Close Event when Close Dialog on Button Click.<p><strong>Short info about \"Commercially Supported\"</strong></p><p><b>Important clarification: My work in the development team of Oracle APEX is in no way related to my open source projects or the plug-ins here on apex.world! All plug-ins are built in my spare time and are not supported by Oracle!</b></p>",
+    "description": "This plug-in is used to move one or more APEX Button behind a Page Item. This is like the Plug-in \"Textfield with Buttons\" but you can use APEX Buttons, so you have full APEX Button and Theme Support. E.g. you got an Dialog Close Event when Close Dialog on Button Click.<p><b>Important clarification: My work in the development team of Oracle APEX is in no way related to my open source projects or the plug-ins here on apex.world! All plug-ins are built in my spare time and are not supported by Oracle!</b></p>",
     "keywords": ["oracle", "apex", "plugin", "dynamic action", "responsive"],
     "homepage": "https://github.com/RonnyWeiss/APEX-Items-with-APEX-Buttons",
     "bugs": {
