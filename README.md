@@ -10,9 +10,9 @@ This plug-in is used to move one or more APEX Button behind a Page Item. This is
 
 For working Demo just click on:
 
-https://apex.oracle.com/pls/apex/f?p=103428
+https://APEX.oracle.com/pls/APEX/f?p=103428
 
-If you like my stuff, would be nice if you donate me a coffee
+If you like my stuff, donate me a coffee
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/RonnyW1)
 
